@@ -25,9 +25,6 @@ In this project, the files related to AnoDDPM are diffusion.py and UNet.py in th
 │       └── utils.py
 │   ├── UNet.py
 │   └── diffusion.py
-├── dataloader.py
-├── main.py
-└── trainer.py
 ``` 
 
 AnoDDPM is a model for Anomaly Detection based on Diffusion Model. It uses Simplex Noise, not Gaussian Mixture Noise, to compensate for the limitations that occur in the Anomaly Detection of DDPM, which is an existing Diffusion Model. Diffusion model using simplex noise has the advantage of generating a normal image well even for the low frequency region of an abnormal image.
