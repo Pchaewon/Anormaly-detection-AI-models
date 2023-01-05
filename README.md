@@ -42,6 +42,9 @@ python main.py --model AE
 ```
 
 ### 3-3. AnoGAN
+> [Paper](https://link.springer.com/chapter/10.1007/978-3-319-59050-9_12)
+AnoGAN combines GAN with an unsupervised method, which is a method of learning only normal data without abnormal data.
+
 
 ### 3-4. AnoDDPM
 For more details about AnoDDPM's technology, please refer to the AnoDDPM paper in the link.
