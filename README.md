@@ -22,6 +22,11 @@ learning_rate : 0.0001<br>
 optimizer : Adam<br>
 Loss_Function : CrossEntropy<br>
 
+The execution method of this model is as follows.
+```bash
+python main.py --model CNN
+```
+
 ### 3-2. AutoEncoder
 For given data, abnormal samples can be detected through the process of dimension reduction and restoration using Principal Component Analysis (PCA). , Autoencoder is typically used as a basis for Neural Network. Autoencoder proceeds with encoding that compresses the input and decoding that restores it closer to the original, and through this, it has an operation similar to PCA that can learn the main components of data in that only important information of data can be learned compressively. you can see it does. 
 
@@ -30,6 +35,11 @@ Using Autoencoder, you can learn the characteristics of the normal region, which
 learning_rate : 0.0001<br>
 optimizer : Adam<br>
 Loss_Function : MSEEntropy<br>
+
+The execution method of this model is as follows.
+```bash
+python main.py --model AE
+```
 
 ### 3-3. AnoGAN
 
