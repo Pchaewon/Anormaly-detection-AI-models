@@ -48,6 +48,33 @@ AnoGAN combines GAN with an unsupervised method, which is a method of learning o
 
 <img width="100%" src="https://user-images.githubusercontent.com/30998582/210761700-f9d37eb6-9aa3-45bd-b192-0c050c13a5c4.PNG"/>
 
+#Training 
+1. As shown in Fig below, only normal data is entered into the GAN model to train the distribution of normal data.
+2. Enter normal/unseen data into a well-trained GAN model and compare anomaly scores to classify them.
+
+Train Generator
+Randomly extract the z vector from the latent space, input it to the Generator to create a fake image, and input this fake image to the Discriminator to learn to trick D into determining that it is a real image.
+
+At this time, the weight of D is not udpated.
+
+Discriminator Learning
+For the generated image fake image and the actual image real image, it learns to judge well as fake/real respectively.
+
+At this time, the weight of G is not updated.
+
+<img width="100%" src="[https://user-images.githubusercontent.com/30998582/210761700-f9d37eb6-9aa3-45bd-b192-0c050c13a5c4.PNG](https://user-images.githubusercontent.com/30998582/210762500-1a65c530-c25b-40d0-9818-6f50cbec2fb3.PNG)"/>
+
+##Anomaly score
+
+#Redisual Loss
+<img width="100%" src="[https://user-images.githubusercontent.com/30998582/210761700-f9d37eb6-9aa3-45bd-b192-0c050c13a5c4.PNG](https://user-images.githubusercontent.com/30998582/210762871-c9936762-2762-4195-9b4c-0e09e0e963d5.PNG)"/>
+
+#Discrimintation loss
+
+
+
+
+
 
 ### 3-4. AnoDDPM
 For more details about AnoDDPM's technology, please refer to the AnoDDPM paper in the link.
