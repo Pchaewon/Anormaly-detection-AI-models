@@ -1,9 +1,11 @@
 # Anormaly-detection-AI-models
 ## 1. Introduction
+This project is an AI model for anomaly detection tailored to the characteristics of data. There are a total of four anomaly detection AI models, which can be selected and used according to the characteristics and size of data.
 
 ## 2. Citation
 
 ## 3. Models
+The four anomaly detection AI models can be run through __main.py__.
 ### 3-1. CNN
 
 ### 3-2. AutoEncoder
