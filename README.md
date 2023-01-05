@@ -16,15 +16,15 @@ This project is an AI model for anomaly detection tailored to the characteristic
 ## 3. Models
 The four anomaly detection AI models can be run through __main.py__.
 ### 3-1. CNN
-  CNN is the basic method used in anomaly detection tasks. It was simply implemented using a 3-layer convolution layer, max_pooling, and fc layer. <br>
+>CNN is the basic method used in anomaly detection tasks. It was simply implemented using a 3-layer convolution layer, max_pooling, and fc layer. <br>
 
 learning_rate : 0.0001<br>
 optimizer : Adam<br>
 Loss_Function : CrossEntropy<br>
 
 ### 3-2. AutoEncoder
-For given data, abnormal samples can be detected through the process of dimension reduction and restoration using Principal Component Analysis (PCA). , Autoencoder is typically used as a basis for Neural Network. Autoencoder proceeds with encoding that compresses the input and decoding that restores it closer to the original, and through this, it has an operation similar to PCA that can learn the main components of data in that only important information of data can be learned compressively. you can see it does. 
-  Using Autoencoder, you can learn the characteristics of the normal region, which is the main component of the data, even without data labels. At this time, if a normal sample is put into the learned autoencoder, it is restored well, so there is almost no difference between input and output. On the other hand, if an abnormal sample is put in, the autoencoder restores it like a normal sample, so there is a difference in the process of finding the difference between input and output. Because it occurs prominently, abnormal samples can be detected.
+>For given data, abnormal samples can be detected through the process of dimension reduction and restoration using Principal Component Analysis (PCA). , Autoencoder is typically used as a basis for Neural Network. Autoencoder proceeds with encoding that compresses the input and decoding that restores it closer to the original, and through this, it has an operation similar to PCA that can learn the main components of data in that only important information of data can be learned compressively. you can see it does. 
+>Using Autoencoder, you can learn the characteristics of the normal region, which is the main component of the data, even without data labels. At this time, if a normal sample is put into the learned autoencoder, it is restored well, so there is almost no difference between input and output. On the other hand, if an abnormal sample is put in, the autoencoder restores it like a normal sample, so there is a difference in the process of finding the difference between input and output. Because it occurs prominently, abnormal samples can be detected.
 
 ### 3-3. AnoGAN
 
