@@ -7,7 +7,7 @@ This project is an AI model for anomaly detection tailored to the characteristic
 ## 3. Models
 The four anomaly detection AI models can be run through __main.py__.
 ### 3-1. CNN
-
+CNN is the basic method used in anomaly detection tasks. It was simply implemented using a 3-layer convolution layer, max_pooling, and fc layer. ReLU was used as the activation function.
 ### 3-2. AutoEncoder
 
 ### 3-3. AnoGAN
