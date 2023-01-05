@@ -3,6 +3,7 @@
 This project is an AI model for anomaly detection tailored to the characteristics of data. There are a total of four anomaly detection AI models, which can be selected and used according to the characteristics and size of data.
 
 ## 2. Citation
+```bash
 @InProceedings{Wyatt_2022_CVPR,
     author    = {Wyatt, Julian and Leach, Adam and Schmon, Sebastian M. and Willcocks, Chris G.},
     title     = {AnoDDPM: Anomaly Detection With Denoising Diffusion Probabilistic Models Using Simplex Noise},
@@ -11,6 +12,7 @@ This project is an AI model for anomaly detection tailored to the characteristic
     year      = {2022},
     pages     = {650-656}
 }
+```
 ## 3. Models
 The four anomaly detection AI models can be run through __main.py__.
 ### 3-1. CNN
