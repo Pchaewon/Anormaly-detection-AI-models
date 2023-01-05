@@ -62,14 +62,14 @@ For the generated image fake image and the actual image real image, it learns to
 
 At this time, the weight of G is not updated.
 
-<img width="100%" src="[https://user-images.githubusercontent.com/30998582/210761700-f9d37eb6-9aa3-45bd-b192-0c050c13a5c4.PNG](https://user-images.githubusercontent.com/30998582/210762500-1a65c530-c25b-40d0-9818-6f50cbec2fb3.PNG)"/>
 
-##Anomaly score
+#How to get Anomaly score
+When a certain image (real image) is input, the method to classify whether it is normal or abnormal is as follows.
 
-#Redisual Loss
-<img width="100%" src="[https://user-images.githubusercontent.com/30998582/210761700-f9d37eb6-9aa3-45bd-b192-0c050c13a5c4.PNG](https://user-images.githubusercontent.com/30998582/210762871-c9936762-2762-4195-9b4c-0e09e0e963d5.PNG)"/>
-
-#Discrimintation loss
+1. Generate a fake image by inputting the randomly generated latent vector z to the generator.
+2. Update the latent vector z by repeating the backpropagation of the anomaly loss 500 times.
+3. The generated image by passing the vector z obtained from step 2 through the generator is judged to be the image most similar to the input image (real image), and an anomaly score is obtained by comparing the generated image with the input image.
+4. The formula below calculates the anomaly score, R(\bold x)R(x)﻿ is the residual loss, and D(\bold x)D(x)﻿ is the same as Discrimination Loss. In the paper, \lambdaλ﻿ is set to 0.1 and used.
 
 
 
