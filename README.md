@@ -69,11 +69,7 @@ When a certain image (real image) is input, the method to classify whether it is
 1. Generate a fake image by inputting the randomly generated latent vector z to the generator.
 2. Update the latent vector z by repeating the backpropagation of the anomaly loss 500 times.
 3. The generated image by passing the vector z obtained from step 2 through the generator is judged to be the image most similar to the input image (real image), and an anomaly score is obtained by comparing the generated image with the input image.
-4. The formula below calculates the anomaly score, R(\bold x)R(x)﻿ is the residual loss, and D(\bold x)D(x)﻿ is the same as Discrimination Loss. In the paper, \lambdaλ﻿ is set to 0.1 and used.
-
-
-
-
+4. The formula below calculates the anomaly score,R(x) is the residual loss, and D(x) is the same as Discrimination Loss. In the paper, lambda is set to 0.1 and used.
 
 
 ### 3-4. AnoDDPM
