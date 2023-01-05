@@ -71,6 +71,10 @@ When a certain image (real image) is input, the method to classify whether it is
 3. The generated image by passing the vector z obtained from step 2 through the generator is judged to be the image most similar to the input image (real image), and an anomaly score is obtained by comparing the generated image with the input image.
 4. The formula below calculates the anomaly score,R(x) is the residual loss, and D(x) is the same as Discrimination Loss. In the paper, lambda is set to 0.1 and used.
 
+The execution method of this model is as follows.
+```bash
+python main.py --model GAN
+```
 
 ### 3-4. AnoDDPM
 For more details about AnoDDPM's technology, please refer to the AnoDDPM paper in the link.
